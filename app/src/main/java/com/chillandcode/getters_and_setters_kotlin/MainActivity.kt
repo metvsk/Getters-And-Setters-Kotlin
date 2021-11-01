@@ -7,20 +7,26 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     private var logMessages: String = ""
 
-//TODO 1 here we use get and set
+    //TODO 1 here we use get and set
     private var name: String = "Vishnu"
         get() = "Hi $field"
         set(value) {
             field = "My name is $value"
         }
 
+    private var classTeacher: String = ""// the get and set functions have to be defined right after the declaration of the variable
+        get() = field//the normal get function
+        set(value) {
+            field = value
+        }//the normal set function
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         //ignore this => only for log
         append(
-            " The setter and getter \nprivate var name: String = \"Vishnu\"\n" +
+            " In kotlin assigning a value to variable calls setter function passing the assigned value as the value parameter\n and the usage of the variable anywhere calls the getter function and returns the value of the field as it is ... \nThe setter and getter \nprivate var name: String = \"Vishnu\"\n" +
                     "        get() = \"Hi \$field\"\n" +
                     "        set(value) {\n" +
                     "            field = \"My name is \$value\"\n" +
