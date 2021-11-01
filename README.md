@@ -6,4 +6,4 @@ A simple code to understand how the getter and setter work in variable
 => Getter  <br>
 => Setter <br>
 Screenshot <br>
-<img src="screenshots/1.png"/>
+<img src="/screenshots/1.png"/>
